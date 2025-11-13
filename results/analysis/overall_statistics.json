@@ -1,0 +1,65 @@
+{
+  "success_rate": {
+    "enhanced_mean": 1.0,
+    "enhanced_std": 0.0,
+    "baseline_mean": 0.4,
+    "baseline_std": 0.49236596391733095,
+    "t_statistic": null,
+    "p_value": 8.714690347787448e-20,
+    "cohens_d": 1.7233687939614084
+  },
+  "safety_violations": {
+    "enhanced_mean": 0.0,
+    "enhanced_std": 0.0,
+    "baseline_mean": 4582.0,
+    "baseline_std": 4019.8652170982505,
+    "t_statistic": -11.398392116508644,
+    "p_value": 1.816542027484615e-23,
+    "cohens_d": -1.611976072041309
+  },
+  "path_length": {
+    "enhanced_mean": 10.28692043287368,
+    "enhanced_std": 2.5950639665962085,
+    "baseline_mean": 11.600895930095907,
+    "baseline_std": 10.169798594381652,
+    "t_statistic": -1.2519210966535352,
+    "p_value": 0.2120754986299684,
+    "cohens_d": -0.1770483793908428
+  },
+  "path_efficiency": {
+    "enhanced_mean": 0.9388640769916681,
+    "enhanced_std": 0.017607972533093874,
+    "baseline_mean": 1.7817610129453598,
+    "baseline_std": 1.919649805045414,
+    "t_statistic": -4.3907043752105865,
+    "p_value": 1.8376856191149708e-05,
+    "cohens_d": -0.62093936757937
+  },
+  "min_obstacle_distance": {
+    "enhanced_mean": Infinity,
+    "enhanced_std": NaN,
+    "baseline_mean": Infinity,
+    "baseline_std": NaN,
+    "t_statistic": NaN,
+    "p_value": NaN,
+    "cohens_d": 0.0
+  },
+  "steps": {
+    "enhanced_mean": 3750.74,
+    "enhanced_std": 978.8026660108252,
+    "baseline_mean": 7273.4,
+    "baseline_std": 3376.366081927716,
+    "t_statistic": -10.020706552422235,
+    "p_value": 2.2287513066268234e-19,
+    "cohens_d": -1.4171419110996468
+  },
+  "computation_time": {
+    "enhanced_mean": 8.17878448009491,
+    "enhanced_std": 8.573303214749052,
+    "baseline_mean": 113.60609702587128,
+    "baseline_std": 52.728707630503514,
+    "t_statistic": -19.73512989432896,
+    "p_value": 1.2053005395011823e-48,
+    "cohens_d": -2.7909688351754722
+  }
+}

@@ -1,0 +1,54 @@
+digraph EmbodiedAI {
+	fontsize=12 label="Embodied Robot: Sensing → Fusion → LLM Planning → Adaptive Control → Safety RA → Actuation" labelloc=t rankdir=LR
+	subgraph cluster_sensors {
+		label=Sensors style=rounded
+		cam [label="RGB-D Camera"]
+		lidar [label=LiDAR]
+		tact [label=Tactile]
+		prop [label="Proprioception
+(IMU/Joint States)"]
+	}
+	subgraph cluster_fusion {
+		label="Fusion Layer" style=rounded
+		sync [label="Sync + Calibration"]
+		est [label="State Estimation
+(UKF / Factor Graph)"]
+	}
+	subgraph cluster_llm {
+		label="LLM Planner" style=rounded
+		ctx [label="Context Encoding
+(scene summary)"]
+		plan [label="Constrained Prompting
++ Confidence Gating"]
+	}
+	subgraph cluster_ctrl {
+		label="Adaptive Control" style=rounded
+		ctrl [label="PID/Impedance or MPC
+(online gain tuning)"]
+	}
+	subgraph cluster_ra {
+		label="Runtime Assurance (Safety)" style=rounded
+		mon [label="Monitors
+(invariants, innovation, collision)"]
+		filter [label="Safety Filter
+(project to safe set)"]
+	}
+	subgraph cluster_act {
+		label=Actuators style=rounded
+		base [label="Base Velocity"]
+		arm [label="Arm Joints"]
+	}
+	cam -> sync
+	lidar -> sync
+	tact -> sync
+	prop -> sync
+	sync -> est
+	est -> ctx
+	ctx -> plan
+	plan -> ctrl [label="nominal cmd"]
+	ctrl -> filter [label="proposed cmd"]
+	est -> mon [label="state/confidence"]
+	mon -> filter [label=constraints]
+	filter -> base
+	filter -> arm
+}

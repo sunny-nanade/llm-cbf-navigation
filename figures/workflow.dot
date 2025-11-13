@@ -1,0 +1,22 @@
+digraph Workflow {
+	fontsize=12 label="Runtime Loop: Sense → Fuse → Plan (LLM) → Control → Safety Filter → Actuate" labelloc=t rankdir=LR
+	sense [label="Sensors
+(RGB-D, LiDAR, Tactile, Prop)"]
+	fusion [label="Fusion
+(Sync + State Estimation)"]
+	plan [label="LLM Planner
+(Constrained + Confidence Gate)"]
+	ctrl [label="Adaptive Control
+(PID/Impedance/MPC)"]
+	safety [label="Runtime Assurance
+(CBF QP Projection)"]
+	act [label="Actuators
+(Base/Arm)"]
+	sense -> fusion
+	fusion -> plan [label=context]
+	plan -> ctrl [label="nominal target"]
+	ctrl -> safety [label="candidate u"]
+	safety -> act [label="safe u"]
+	fusion -> safety [label=invariants style=dashed]
+	act -> sense [label="closed-loop" style=dotted]
+}

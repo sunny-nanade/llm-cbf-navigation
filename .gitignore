@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Results - exclude large datasets but keep examples
+simulation_results/*.json
+!simulation_results/example_*.json
+
+# Generated figures - keep examples only
+generated_figures/*.png
+generated_figures/*.pdf
+!generated_figures/FIGURE_DESCRIPTIONS.md
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+tmp*.tex
+*.bcf
+*.run.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Personal/Private files
+*Invitation*.txt
+*invitation*.txt
+*Response*.txt
+*Author*.txt
+*author*.txt
+PaperPAL Replies/
+notes/
+drafts/
+submission/
+MDPI_template_ACS/
+refs/
+
+# Development/Analysis markdown files (internal use only)
+BRUTAL_HONEST_TRUTH.md
+CHECKLIST.md
+COMPARISON_*.md
+CRITICAL_ANALYSIS.md
+DEBUG_*.md
+EXPERIMENT_GUIDE.md
+FINAL_STATUS*.md
+GPU_ANALYSIS.md
+HONEST_SITUATION.md
+IMPLEMENTATION_CHECKLIST.md
+MANUSCRIPT_UPDATE_GUIDE.md
+OPTIMIZATION_LOG.md
+OPTION_B_PROGRESS.md
+PAPER_*.md
+PHASE*.md
+PROGRESS_SUMMARY.md
+RECOMMENDATION.md
+RESTART_PLAN.md
+VERIFICATION_RESULTS.md
+WHAT_*.md
+*_LOG.md
+*_PROGRESS.md
+*_ANALYSIS.md
+*_CHECKLIST.md
+
+# Command output logs
+cmd*.txt
+*.log
+phase*.txt
+
+# Temporary test files
+test_*.py
+quick_*.py
+debug_*.py
+verify_*.py
+check_*.py
+search_*.py
+SHOW_*.py
+VERIFY_*.py
+tmp_*
+PHASE*.py
+RESUME_*.py
+
+# Archive folders
+scripts_archive/
+results/archive_old_videos/
+
+# Experimental result files (too large - keep only final)
+results/experiments/intermediate_*.json
+
+# About files
+About*.txt
+*Instructions*.txt
+
+# Batch files
+*.bat
+
+# Videos
+*.mp4
+*_metadata.txt
+
+# Old/archive data
+code/sim/out/

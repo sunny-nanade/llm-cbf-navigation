@@ -1,0 +1,42 @@
+{
+  "Cluttered - Dense Field": {
+    "enhanced_success_rate": 100.0,
+    "baseline_success_rate": 0.0,
+    "enhanced_violations": 0,
+    "baseline_violations": 78900,
+    "enhanced_trials": 20,
+    "baseline_trials": 20
+  },
+  "Dynamic - Strategic Placement": {
+    "enhanced_success_rate": 100.0,
+    "baseline_success_rate": 100.0,
+    "enhanced_violations": 0,
+    "baseline_violations": 11580,
+    "enhanced_trials": 20,
+    "baseline_trials": 20
+  },
+  "Easy - No Obstacles": {
+    "enhanced_success_rate": 100.0,
+    "baseline_success_rate": 100.0,
+    "enhanced_violations": 0,
+    "baseline_violations": 0,
+    "enhanced_trials": 20,
+    "baseline_trials": 20
+  },
+  "Hard - Multiple Obstacles": {
+    "enhanced_success_rate": 100.0,
+    "baseline_success_rate": 0.0,
+    "enhanced_violations": 0,
+    "baseline_violations": 186740,
+    "enhanced_trials": 20,
+    "baseline_trials": 20
+  },
+  "Medium - Single Obstacle": {
+    "enhanced_success_rate": 100.0,
+    "baseline_success_rate": 0.0,
+    "enhanced_violations": 0,
+    "baseline_violations": 180980,
+    "enhanced_trials": 20,
+    "baseline_trials": 20
+  }
+}
