@@ -59,7 +59,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @article{llm-cbf-2025,
   title={Large Language Model-Driven Multimodal Sensor Fusion and Adaptive Control for Safety-Critical Embodied Autonomous Robots},
-  author={[Your Name]},
+  author={Sunny Nanade},
   journal={MDPI Sensors},
   year={2025}
 }
@@ -71,6 +71,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For questions or issues, please open an issue on GitHub or contact [your email].
+For questions or issues, please open an issue on GitHub.
 
 ---
