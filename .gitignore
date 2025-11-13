@@ -40,10 +40,8 @@ env/
 simulation_results/*.json
 !simulation_results/example_*.json
 
-# Generated figures - keep examples only
-generated_figures/*.png
-generated_figures/*.pdf
-!generated_figures/FIGURE_DESCRIPTIONS.md
+# Generated figures are needed for paper reproducibility
+# (keep all figures referenced in the manuscript)
 
 # LaTeX temporary files
 *.aux
