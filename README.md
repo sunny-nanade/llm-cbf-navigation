@@ -34,19 +34,12 @@ pip install -r requirements.txt
 
 ## How to Run
 
-1. **Run the full simulation and analysis pipeline:**
-   ```bash
-   python run_simulation.py
-   ```
-   This will:
-   a. Run the baseline and safety-filtered simulation scenarios.
-   b. Save the results to the `simulation_results/` directory.
-   c. Analyze the results to generate `trajectory.png`, `safety.png`, and `metrics_summary_real.tex` in the `generated_figures/` directory.
+**Run the full simulation and analysis pipeline:**
+```bash
+python run_simulation.py
+```
 
-2. **Update the LaTeX Manuscript:**
-   - Ensure the `\includegraphics` paths in `template.tex` point to the `generated_figures/` directory.
-   - Use `\input{../generated_figures/metrics_summary_real.tex}` to include the results table.
-   - Compile the LaTeX document to see the updated figures and table.
+This will run the baseline and safety-filtered simulation scenarios, save results to `simulation_results/`, and generate figures and tables in `generated_figures/`.
 
 ## Data Availability
 
