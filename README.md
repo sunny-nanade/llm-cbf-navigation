@@ -59,7 +59,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @article{llm-cbf-2025,
   title={Large Language Model-Driven Multimodal Sensor Fusion and Adaptive Control for Safety-Critical Embodied Autonomous Robots},
-  author={Sunny Nanade},
+  author={Sunny Nanade and Koteswara Rao Anne},
   journal={MDPI Sensors},
   year={2025}
 }
